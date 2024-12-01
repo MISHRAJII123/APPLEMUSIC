@@ -247,16 +247,16 @@ async def start_message_private(client, message):
 ╭───────────────────⦿‍
 │❍ Hello, {mention}
 │❍ • ɪ ᴀᴍ  @{bot.me.username}•‍
-│❍🥀 I am An ≽ Advanced ≽ High Quality
-│Bot, I Can Stream 🌿 Audio & Video In
-│Your ♚ Channel And Group.
+│❍🥀  I am An ≽ Advanced ≽ High Quality
+│ Bot, I Can Stream 🌿 Audio & Video In
+│ Your ♚ Channel And Group.
 
-│❍🐬 Must Click ❥ Open Command List
-│ Button ⋟ To Get More Info's 🦋 About
-│ My All Commands.
+│❍ 🐬 Must Click ❥ Open Command List
+│  Button ⋟ To Get More Info's 🦋 About
+│  My All Commands.
 
-│❍💐 Feel Free ≽ To Use Me › And Share
-│With Your ☛ Other Friends.**"""
+│❍ 💐 Feel Free ≽ To Use Me › And Share
+│ With Your ☛ Other Friends.**"""
 │      [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/ll_ITZ_NAWAB_HERE_ll)
 ╰───────────────────⦿"""
     buttons = InlineKeyboardMarkup(
