@@ -257,7 +257,8 @@ async def start_message_private(client, message):
 
 │❍ 💐 Feel Free ≽ To Use Me › And Share
 │ With Your ☛ Other Friends.**"""
-│      [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/ll_ITZ_NAWAB_HERE_ll)
+├───────────────────⦿‍
+│      [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/ll_ITZ_NAWAB_HERE)
 ╰───────────────────⦿"""
     buttons = InlineKeyboardMarkup(
         [
