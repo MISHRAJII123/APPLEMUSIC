@@ -211,7 +211,7 @@ async def main():
     LOGGER.info("✅ PyTgCalls Started.")
     await asyncio.sleep(1)
     LOGGER.info("✅ Sucessfully Hosted Your Bot !!")
-    LOGGER.info("✅ Now Do Visit: @net_pro_max !!")
+    LOGGER.info("✅ Now Do Visit: @ll_SARKAR_OWNER_ll !!")
     await idle()
 
 
@@ -245,19 +245,19 @@ async def start_message_private(client, message):
     mention = message.from_user.mention
     caption = f"""
 ╭───────────────────⦿‍
-│❍ • ʜᴇʏ  {mention} •‍
+│❍ Hello, {mention}
 │❍ • ɪ ᴀᴍ  @{bot.me.username}•‍
-├───────────────────⦿‍
-│❍ • ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs •‍
-├───────────────────⦿‍
-│❍ • ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ‍
-│  ʙᴏᴛ ᴡɪᴛʜ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs‍
-│❍ • ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ •‍
-│❍ • ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ᴍᴜsɪᴄ sᴏᴜɴᴅ •‍
-│❍ • ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs •‍
-│❍ • 24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ •‍
-├───────────────────⦿‍
-│      [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/ll_ITZ_NAWAB_HERE_ll)
+│❍🥀 I am An ≽ Advanced ≽ High Quality
+│Bot, I Can Stream 🌿 Audio & Video In
+│Your ♚ Channel And Group.
+
+│❍🐬 Must Click ❥ Open Command List
+│ Button ⋟ To Get More Info's 🦋 About
+│ My All Commands.
+
+│❍💐 Feel Free ≽ To Use Me › And Share
+│With Your ☛ Other Friends.**"""
+│❍     [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/ll_ITZ_NAWAB_HERE_ll)
 ╰───────────────────⦿"""
     buttons = InlineKeyboardMarkup(
         [
