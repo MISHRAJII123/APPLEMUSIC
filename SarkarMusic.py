@@ -1287,3 +1287,131 @@ async def update_repo_latest(client, message):
 
 if __name__ == "__main__":
     loop.run_until_complete(main())
+
+@bot.on_callback_query(rgx("check_stats"))
+async def check_total_stats(client, query):
+    try:
+        user_id = query.from_user.id
+        runtime = __start_time__
+        boot_time = int(time.time() - runtime)
+        uptime = get_readable_time((boot_time))
+        served_chats = len(await get_served_chats())
+        served_users = len(await get_served_users())
+        activ_chats = len(ACTIVE_MEDIA_CHATS)
+        audio_chats = len(ACTIVE_AUDIO_CHATS)
+        video_chats = len(ACTIVE_VIDEO_CHATS)
+        
+        return await query.answer(
+            f"""⏱️ ʙᴏᴛ ʀᴜɴ ᴛɪᴍᴇ [Boot]
+☛ {uptime}
+
+🔴 ꜱᴇʀᴠᴇᴅ ᴄʜᴀᴛꜱ: {served_chats}
+🔵 ꜱᴇʀᴠᴇᴅ ᴄʜᴀᴛꜱ: {served_users}
+
+🦋 ᴛᴏᴛᴀʟ ᴀᴄᴛɪᴠᴇ ᴄʜᴀᴛꜱ [{activ_chats}]
+✿⋟ ᴀᴜᴅɪᴏ ᴄʜᴀᴛꜱ: {audio_chats}
+✿⋟ ᴠɪᴅᴇᴏ ᴄʜᴀᴛꜱ: {video_chats}""",
+            show_alert=True
+        )
+    except Exception as e:
+        LOGGER.info(f"🚫 Stats Error: {e}")
+        pass
+
+
+@bot.on_message(cdx(["broadcast", "gcast"]) & bot_owner_only)
+async def broadcast_message(client, message):
+    try:
+        await message.delete()
+    except:
+        pass
+    if message.reply_to_message:
+        x = message.reply_to_message.id
+        y = message.chat.id
+    else:
+        if len(message.command) < 2:
+            return await message.reply_text("♻️ Usage\n/broadcast [Message] Or [Reply To a Message]")
+        query = message.text.split(None, 1)[1]
+        if "-pin" in query:
+            query = query.replace("-pin", "")
+        if "-nobot" in query:
+            query = query.replace("-nobot", "")
+        if "-pinloud" in query:
+            query = query.replace("-pinloud", "")
+        if "-user" in query:
+            query = query.replace("-user", "")
+        if query == "":
+            return await message.reply_text("🥀 ᴘʟᴇᴀꜱᴇ ɢɪᴠᴇ ᴍᴇ ꜱᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ʙʀᴏᴀᴅᴄᴀꜱᴛ❗...")
+    
+    # Bot broadcast inside chats
+    if "-nobot" not in message.text:
+        sent = 0
+        pin = 0
+        chats = []
+        schats = await get_served_chats()
+        for chat in schats:
+            chats.append(int(chat["chat_id"]))
+        for i in chats:
+            try:
+                m = (
+                    await bot.forward_messages(i, y, x)
+                    if message.reply_to_message
+                    else await bot.send_message(i, text=query)
+                )
+                if "-pin" in message.text:
+                    try:
+                        await m.pin(disable_notification=True)
+                        pin += 1
+                    except Exception:
+                        continue
+                elif "-pinloud" in message.text:
+                    try:
+                        await m.pin(disable_notification=False)
+                        pin += 1
+                    except Exception:
+                        continue
+                sent += 1
+            except FloodWait as e:
+                flood_time = int(e.value)
+                if flood_time > 200:
+                    continue
+                await asyncio.sleep(flood_time)
+            except Exception:
+                continue
+        try:
+            await message.reply_text("ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴ {0}  ᴄʜᴀᴛꜱ ᴡɪᴛʜ {1} ᴘɪɴꜱ ꜰʀᴏᴍ ʙᴏᴛ.".format(sent, pin))
+        except:
+            pass
+
+    # Bot broadcasting to users
+    if "-user" in message.text:
+        susr = 0
+        served_users = []
+        susers = await get_served_users()
+        for user in susers:
+            served_users.append(int(user["user_id"]))
+        for i in served_users:
+            try:
+                m = (
+                    await bot.forward_messages(i, y, x)
+                    if message.reply_to_message
+                    else await bot.send_message(i, text=query)
+                )
+                susr += 1
+            except FloodWait as e:
+                flood_time = int(e.value)
+                if flood_time > 200:
+                    continue
+                await asyncio.sleep(flood_time)
+            except Exception:
+                pass
+        try:
+            await message.reply_text("ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ {0} ᴜꜱᴇʀꜱ.".format(susr))
+        except:
+            pass
+
+
+
+
+
+if __name__ == "__main__":
+    loop.run_until_complete(main())
