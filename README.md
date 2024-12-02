@@ -1,6 +1,6 @@
 
 <p align="center">
-<b>Dvis Music</b><br/>
+<b>Sarkar Music</b><br/>
 Dvis Music is an advanced & powerful multi-featured Telegram vc streaming bot.
 </p>
 
@@ -8,11 +8,11 @@ Dvis Music is an advanced & powerful multi-featured Telegram vc streaming bot.
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/sangu272/Apnarepo"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/MISHRAJII123/APPLEMUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 
-<h2>🤖 Dvis Music Info</h2>
+<h2>🤖 Sarkar Music Info</h2>
 <p title="Dvis Music">Dvis Music is an open-source Telegram multi-featured vc streaming bot developed by using the Python programming language and Pyrogram MTProto client library of the Telegram API and PyTgCalls library, a secure and reliable way to interact with the Telegram platform.</p>
 
 <h2>♨️ Host DvisMusic On VPS Server</h2>
