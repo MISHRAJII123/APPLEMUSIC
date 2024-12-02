@@ -337,7 +337,7 @@ async def back_to_home_menu(client, query):
 │❍ ▸ 𝗬ᴏᴜ 𝗖ᴀɴ 𝗣ʟᴀʏ 𝗠ᴜꜱɪᴄ + 𝗩ɪᴅᴇᴏ
 ├──────────────────
 │❍ ▸ 𝗧ᴀᴘ 𝗧ᴏ 𝗖ᴏᴍᴍᴀɴᴅs
-│❍ ▸ 𝗠ᴀᴅᴇ 𝗕ʏ... [❤️‍🔥 • 𝛚𝛐𝛚 • ❤️‍🔥](https://t.me/ll_ITZ_NAWAB_HERE_ll)
+│❍ ▸ 𝗠ᴀᴅᴇ 𝗕ʏ... [❤️‍🔥 • 𝛚𝛐𝛚 • ❤️‍🔥](https://t.me/ll_SARKAR_OWNER_ll)
 ╰───────────────────👑"""
     buttons = InlineKeyboardMarkup(
         [
@@ -645,7 +645,7 @@ async def stream_logger(
 **❍ Cʜᴀᴛ Lɪɴᴋ:** {chat_link}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ:** {requested_by}
 
-❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_BIO_STYLE)**"""
+❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_NAME_STYLE)**"""
             else:
                 caption = f"""**✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ 𝐎ɴ 𝐕ᴄ.**
 
@@ -716,7 +716,7 @@ async def change_stream(chat_id):
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_BIO_STYLE)**"""
+❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_NAME_STYLE)**"""
     buttons = InlineKeyboardMarkup(
         [
             [
@@ -922,7 +922,7 @@ async def stream_audio_or_video(client, message):
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_BIO_STYLE)**"""
+❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_NAME_STYLE)**"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail, position
@@ -1031,7 +1031,7 @@ async def stream_audio_or_video(client, message):
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_BIO_STYLE)**"""
+❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/TG_NAME_STYLE)**"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail
@@ -1211,7 +1211,7 @@ async def git_repo_link(client, message):
 │❍ ▸ 𝗬ᴏᴜ 𝗖ᴀɴ 𝗣ʟᴀʏ 𝗠ᴜꜱɪᴄ + 𝗩ɪᴅᴇᴏ
 ├──────────────────
 │❍ ▸ 𝗧ᴀᴘ 𝗧ᴏ 𝗖ᴏᴍᴍᴀɴᴅs
-│❍ ▸ 𝗠ᴀᴅᴇ 𝗕ʏ... [❤️‍🔥 • 𝛚𝛐𝛚 • ❤️‍🔥](https://t.me/ll_ITZ_NAWAB_HERE_ll)
+│❍ ▸ 𝗠ᴀᴅᴇ 𝗕ʏ... [❤️‍🔥 • 𝛚𝛐𝛚 • ❤️‍🔥](https://t.me/ll_SARKAR_OWNER_ll)
 ╰───────────────────👑"""
     else:
         caption = f"**➻ Hello, {mention}.**"
@@ -1220,7 +1220,7 @@ async def git_repo_link(client, message):
             [
                 InlineKeyboardButton(
                     text="🌺 𝐎ᴘᴇɴ 𝐑ᴇᴘᴏsɪᴛᴏʀʏ 𝐋ɪɴᴋ 🦋",
-                    url="https://t.me/ll_ITZ_NAWAB_HERE_ll",
+                    url="https://t.me/ll_SARKAR_OWNER_ll",
                 )
             ],
             [
