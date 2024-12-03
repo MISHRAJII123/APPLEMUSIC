@@ -193,8 +193,8 @@ async def main():
         LOGGER.info(f"🚫 Assistant Error: {e}")
         sys.exit()
     try:
-        await app.join_chat("net_pro_max")
-        await app.join_chat("ai_image_junction")
+        await app.join_chat("TG_NAME_STYLE")
+        await app.join_chat("PROMOTION_UPDATE")
     except Exception:
         pass
     if LOG_GROUP_ID != 0:
